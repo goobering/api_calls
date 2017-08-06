@@ -1,0 +1,73 @@
+body {
+    font-family: 'Saira', sans-serif;
+    background-color: lightslategrey;
+    color: white;
+}
+
+.outer {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+}
+
+.header,
+.footer {
+  flex: none;
+}
+
+.container {
+  display: flex;
+  flex: 1 0 auto;
+  flex-direction: row;
+  padding: var(--space);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav {
+  /* put the nav on the left */
+  order: -1;
+}
+
+.nav, .ads {
+    flex: 0 0 12em;
+}
+
+#ytplayer {
+    width: 640px;
+    height: 360px;
+    margin: auto;
+}
+
+#output {
+    height: 100px;
+    font-size: 4em;
+}
+
+#speech-setup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#start-speech {
+    width: 100px;
+    height: 60px;
+    margin: 6px;
+    background-color: gold;
+    color: lightslategrey;
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+#wiki-extract {
+    width: 640px;
+    margin: auto;
+}
